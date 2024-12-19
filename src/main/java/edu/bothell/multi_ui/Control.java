@@ -10,12 +10,12 @@ public class Control {
     
      
     public Control(){
-        this.ui = null;
+        this.ui = new Swing(this);
         System.out.println("CONTROL ACTIVE");
     }
     public Control(UI ui){
         this.ui = ui;
-        this.g.addPlayer(p);
+        this.g.addPlayer();
     }
 
     public Control(Player p){
